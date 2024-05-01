@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(243, 236, 226);
+}
+
+.conteiner{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1000px, 1fr));
+    grid-gap: 10px;
+}
+
+/*cabeçalho*/
+
+header{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(243, 236, 226);
+    position: fixed;
+    width: 100%;
+    z-index: 2000000000;
+    transition: all 0.5s ease;
+}
+
+header img{
+    width: 110px;
+    margin-left: 150px;
+    transition: opacity 0.5s ease;
+}
+
+header .link{
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #1b1b1c;
+}
+
+.menu{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 100px;
+    transition: justify-content 0.5s ease;
+}
+
+header .link:hover{
+    text-decoration: underline;
+    color: #2f2f30;
+}
+
+/*Título*/
+
+.title{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,170,177,1) 100%);
+    height: 500px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-border-bottom-right-radius: 100px;
+    -webkit-border-bottom-left-radius: 100px;
+    -moz-border-radius-bottomright: 100px;
+    -moz-border-radius-bottomleft: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 110px;
+}
+
+.title .titulo{
+    padding-left: 80px;
+    color: rgb(243, 236, 226);
+}
+
+.title .img_title{
+    height: 500px;
+    width: 700px;
+    -webkit-border-bottom-right-radius: 100px;
+    -webkit-border-bottom-left-radius: 100px;
+    -moz-border-radius-bottomright: 100px;
+    -moz-border-radius-bottomleft: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    -webkit-box-shadow: -2px 2px 20px 3px rgba(0,0,0,0.65);
+    -moz-box-shadow: -2px 2px 20px 3px rgba(0,0,0,0.65);
+    box-shadow: -2px 2px 20px 3px rgba(0,0,0,0.65);
+    z-index: 999999;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.hover{
+    position: absolute; 
+    top: 45%; 
+    left:70%; 
+    transform: translate(-30%, -30%);
+    color: #1b1b1c;
+}
+
+.title button{
+    margin-top: 50px;
+    height: 50px;
+    width: 250px;
+    background-color: rgb(243, 236, 226);
+    border-radius: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 300ms;
+}
+
+.title button svg{
+    padding-right: 20px;
+}
+
+.title button:hover{
+    background-color: #ccc9c9;
+    
+    cursor: pointer;
+    transform: scale(110%);
+}
+
+/*conteúdo*/
+
+.content h1{
+    margin-top: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+}
+
+.divisoria{
+    width: 700px;
+    border-radius: 100px;
+    height: 3px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,170,177,1) 100%);
+    margin-bottom:40px ;
+    margin-top:20px ;
+    display: flex; 
+    transform: translateX(45%);
+}
+
+.content h1{
+    text-align: center;
+    margin-top: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+}
+
+.content h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.produtos{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,170,177,1) 100%);
+    border-radius: 100px;
+    display: grid;
+    place-items: center;
+}
+
+.servico{
+    background-color:rgb(243, 236, 226) ;
+    height: 350px;
+    width: 350px;
+    border-radius: 50px;
+    text-align: center;
+    border: solid 1px rgb(243, 236, 226) ;
+}
+
+.produtos h2{
+    padding-top: 50px;
+    font-size: 33px;
+    color:rgb(243, 236, 226) ;
+}
+
+.faciais .img_servico{
+    width: 100px;
+}
+
+h3{
+    padding-top: 15px;
+    z-index: 199999999999;
+}
+
+.div_hover{
+    width: 100px;
+    height: 2px;
+    position: relative;
+    left:37%;
+    margin-top: 7px;
+    border-radius: 100px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,170,177,1) 100%);
+    z-index: 99999999;
+}
+
+.conteudo{
+    z-index: 8888888;
+    background-color: rgba(243, 236, 226, 0.719) ;
+    height: 350px;
+    width: 350px;
+    border-radius: 50px;
+    opacity: 0;
+    transition: 0.6s ease-in-out;
+    cursor: pointer;
+}
+
+.conteudo p{
+    position: absolute; 
+    top: 50%; 
+    left:50%;
+    margin-top: 10px;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    width: 300px;
+}
+
+.conteudo:hover{
+    opacity: 1;
+}
+
+#div_hover{
+    width: 300px;
+}
+
+.produtos .avaliação{
+    margin-top: 50px;
+    height: 50px;
+    width: 250px;
+    background-color: rgb(243, 236, 226);
+    border-radius: 50px;
+    transition: 300ms;
+    position:static;
+    margin-bottom: 50px;
+}
+
+.produtos .avaliação svg{
+    padding-right: 20px;
+}
+
+.produtos .avaliação:hover{
+    background-color: #ccc9c9;
+    cursor: pointer;
+    transform: scale(110%);
+}
+
+.divisoria_2{
+    width: 800px;
+    border-radius: 100px;
+    height: 3px;
+    background-color: rgb(243, 236, 226);
+}
+
+
+
+/*faciais*/
+
+
+.faciais{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+}
+
+#facial{
+    transform: translateY(-49px);
+}
+
+
+#Microdermoabrasão{
+    background-image: url(../clinica_IMG/Microdermoabrasão.avif);
+    background-size: cover;
+}
+
+#Lifting{
+    background-image: url(../clinica_IMG/Lifting\ Facial\ Não\ Cirúrgico.jpg);
+    background-size: cover;
+}
+
+#LED{
+    background-image: url(../clinica_IMG/Terapia\ LED.jpg);
+    background-size: cover;
+}
+
+
+/*corporais*/
+
+.corporais{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+}
+
+#corporal{
+    transform: translateY(-49px);
+}
+
+
+
+#Body{
+    background-image: url(../clinica_IMG/Body\ Wrap\ Detox.jpg);
+    background-size: cover;
+    background-position-y: -20%;
+}
+
+#Bronzeamento{
+    background-image: url(../clinica_IMG/Bronzeamento\ a\ Jato.jpg);
+    background-size: cover;
+}
+
+#Pedras{
+    background-image: url(../clinica_IMG/Terapia\ com\ Pedras\ Quentes.jpg);
+    background-size: cover;
+}
+
+
+/*procedimentos*/
+
+.procedimentos{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+}
+
+#procedimentos{
+    transform: translateY(-49px);
+}
+
+#Depilação{
+    background-image: url(../clinica_IMG/Depilação\ a\ Laser.jpg);
+    background-size: cover;
+    background-position-y: -20%;
+}
+
+#Carboxiterapia{
+    background-image: url(../clinica_IMG/Carboxiterapia.jpg);
+    background-size: cover;
+}
+
+#Mesoterapia{
+    background-image: url(../clinica_IMG/Mesoterapia.avif);
+    background-size: cover;
+}
+
+/*footer*/
+
+.rodape .divisoria{
+    margin-top: 70px;
+    width: 800px;
+    transform: translateX(35%);
+}
+
+footer{
+    margin-top: 20px;
+    text-align: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,170,177,1) 100%);
+    color:rgb(243, 236, 226);
+    padding-top: 20px;
+    -webkit-border-top-left-radius: 50px;
+    -webkit-border-top-right-radius: 50px;
+    -moz-border-radius-topleft: 50px;
+    -moz-border-radius-topright: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+footer button{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    gap: 10px;
+    padding: 10px 10px;
+    background-color: #ccc9c9;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+footer button:hover{
+    background-color: #858588;
+    transform: scale(110%);
+}
+
+
+

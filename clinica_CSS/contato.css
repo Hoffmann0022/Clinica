@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(243, 236, 226);
+}
+
+.conteiner{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1000px, 1fr));
+    grid-gap: 10px;
+}
+
+/*cabeçalho*/
+
+header{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(243, 236, 226);
+    position: fixed;
+    width: 100%;
+    z-index: 2000000000;
+    transition: all 0.5s ease;
+}
+
+header img{
+    width: 110px;
+    margin-left: 150px;
+    transition: opacity 0.5s ease;
+}
+
+header .link{
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #1b1b1c;
+}
+
+.menu{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 100px;
+    transition: justify-content 0.5s ease;
+}
+
+header .link:hover{
+    text-decoration: underline;
+    color: #2f2f30;
+}
+
+
+/*footer*/
+
+.rodape .divisoria{
+    margin-top: 70px;
+    width: 800px;
+    transform: translateX(35%);
+}
+
+footer{
+    margin-top: 20px;
+    text-align: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,170,177,1) 100%);
+    color:rgb(243, 236, 226);
+    padding-top: 20px;
+    -webkit-border-top-left-radius: 50px;
+    -webkit-border-top-right-radius: 50px;
+    -moz-border-radius-topleft: 50px;
+    -moz-border-radius-topright: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+footer button{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    gap: 10px;
+    padding: 10px 10px;
+    background-color: #ccc9c9;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+footer button:hover{
+    background-color: #858588;
+    transform: scale(110%);
+}
+
+/*content*/
+
+
+h1{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    margin-top: 110px;
+}
+
+.contato h1{
+    margin-top: 50px ;
+}
+
+.contato h3{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 23px;
+    margin-top: 30px;
+}
+.divisoria{
+    width: 700px;
+    border-radius: 100px;
+    height: 3px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,170,177,1) 100%);
+    margin-bottom:40px ;
+    display: flex; 
+    transform: translateX(45%);
+}
+
+.content{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,170,177,1) 100%);
+    border-radius: 100px;
+    display: grid;
+    place-items: center;
+    justify-content: space-between;
+}
+
+.ligar{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.whats{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.form{
+    display: flex;
+}
+
+.lead{
+    padding: 20px;
+    border-radius: 30px;
+    background-color: rgba(243, 236, 226, 0.295);
+    backdrop-filter: blur(5px);
+    margin: 50px;
+    margin-left: 100px;
+    margin-right: 150px;
+}
+
+iframe{
+    margin-top: 100px;
+    transition: 0.6s ease-in-out;
+}
+
+iframe:hover{
+    transform: scale(110%);
+}
+
+textarea{
+    margin-top: 15px;
+    border-radius: 20px;
+    width:450px;
+    height: 150px;
+    background-color: rgba(243, 236, 226, 0.295);
+    border: 1px solid rgb(243, 236, 226);
+    font-size: large;
+    transform: translateY(-50px);
+    transition: 0.6s ease-in-out;
+}
+
+#barra::placeholder{
+    color: #4f4f50;
+    padding-left: 20px;
+}
+
+#barra{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 50px;
+    width:450px;
+    height: 50px;
+    background-color: rgba(243, 236, 226, 0.295);
+    border: 1px solid rgb(243, 236, 226);
+    font-size: large;
+    transform: translateY(-20px);
+    color: #1b1b1c;
+    transition: 0.6s ease-in-out;
+}
+
+#barra:hover{
+    transform: scale(105%) translateY(-20px);
+}
+
+textarea:hover{
+    transform: scale(105%) translateY(-50px);
+}
+
+.content button{
+    height: 50px;
+    width: 130px;
+    background-color: rgb(243, 236, 226);
+    border-radius: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 300ms;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.content button:hover{
+    background-color: #ccc9c9;
+    cursor: pointer;
+    transform: scale(110%);
+}
